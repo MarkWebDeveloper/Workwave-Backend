@@ -23,8 +23,8 @@ public class AnnouncementService implements IGenericGetService <Announcement> {
 
     public Announcement getById(Long id) throws Exception {
         
-        Announcement event = repository.findById(id).orElseThrow(() -> new AnnouncementNotFoundException("Event not found"));
+        Announcement announcement = repository.findById(id).orElseThrow(() -> new AnnouncementNotFoundException("Event not found"));
 
-        return event;
+        return announcement;
     }
 }

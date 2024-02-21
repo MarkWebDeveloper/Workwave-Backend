@@ -21,6 +21,9 @@ public class Announcement {
     private Long id;
 
     @Column
+    private String province;
+
+    @Column
     private String jobName;
 
     @Column
@@ -33,23 +36,24 @@ public class Announcement {
     private String jobDescription;
 
     @Column
-    private String salary;
+    private Long salary;
 
     @Column
     @JsonFormat(pattern="yyyy-MM-dd")
-    private Date startDate;
+    private Date publicationDate;
 
     public Announcement() {
     }
 
-    public Announcement(String jobName, String companyName, String jobRequirements, String jobDescription,
-            String salary, Date startDate) {
+    public Announcement(String province, String jobName, String companyName, String jobRequirements,
+            String jobDescription, Long salary, Date publicationDate) {
+        this.province = province;
         this.jobName = jobName;
         this.companyName = companyName;
         this.jobRequirements = jobRequirements;
         this.jobDescription = jobDescription;
         this.salary = salary;
-        this.startDate = startDate;
+        this.publicationDate = publicationDate;
     }
 
     public Long getId() {
@@ -58,6 +62,14 @@ public class Announcement {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getProvince() {
+        return province;
+    }
+
+    public void setProvince(String province) {
+        this.province = province;
     }
 
     public String getJobName() {
@@ -92,19 +104,21 @@ public class Announcement {
         this.jobDescription = jobDescription;
     }
 
-    public String getSalary() {
+    public Long getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(Long salary) {
         this.salary = salary;
     }
 
-    public Date getStartDate() {
-        return startDate;
+    public Date getPublicationDate() {
+        return publicationDate;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
+    public void setPublicationDate(Date publicationDate) {
+        this.publicationDate = publicationDate;
     }
+
+    
 }
