@@ -33,7 +33,7 @@ public class AnnouncementServiceTest {
     @Test
     void testGetAllAnnouncements() {
 
-        Date date = new GregorianCalendar(2014, Calendar.FEBRUARY, 11).getTime();
+        Date date = new GregorianCalendar(2024, Calendar.FEBRUARY, 22).getTime();
 
         Announcement anun1 = new Announcement("Asturias", "Programador muy Junior", "AsturBest", "Estar sobrio y no drogado", "El mejor puesto de trabajo del mundo", 100000L, date);
         anun1.setId(1L);

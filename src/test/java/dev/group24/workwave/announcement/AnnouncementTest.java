@@ -21,7 +21,7 @@ public class AnnouncementTest {
     @BeforeEach
     void setUp() {
 
-        Date date = new GregorianCalendar(2014, Calendar.FEBRUARY, 11).getTime();
+        Date date = new GregorianCalendar(2024, Calendar.FEBRUARY, 22).getTime();
 
         announcement = new Announcement("Asturias", "Programador muy Junior", "AsturBest", "Estar sobrio y no drogado", "El mejor puesto de trabajo del mundo", 100000L, date);
         announcement.setId(1L);
@@ -36,7 +36,7 @@ public class AnnouncementTest {
     @Test
     void testAnnouncementHasCorrectAttributes() {
 
-        Date currentDate = new GregorianCalendar(2014, Calendar.FEBRUARY, 11).getTime();
+        Date currentDate = new GregorianCalendar(2024, Calendar.FEBRUARY, 22).getTime();
         
         assertThat(announcement.getId(), is(1L));
         assertThat(announcement.getJobName(), is("Programador muy Junior"));

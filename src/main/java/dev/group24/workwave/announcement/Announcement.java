@@ -119,6 +119,5 @@ public class Announcement {
     public void setPublicationDate(Date publicationDate) {
         this.publicationDate = publicationDate;
     }
-
     
 }

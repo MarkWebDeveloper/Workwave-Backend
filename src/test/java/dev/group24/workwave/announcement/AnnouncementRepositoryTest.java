@@ -44,8 +44,8 @@ public class AnnouncementRepositoryTest {
     }
 
     @Test
-    void testDeleteCountryById() {
-        Date date = new GregorianCalendar(2014, Calendar.FEBRUARY, 11).getTime();
+    void testDeleteAnnouncementById() {
+        Date date = new GregorianCalendar(2024, Calendar.FEBRUARY, 22).getTime();
 
         Announcement anun1 = new Announcement("Islas Canarias", "Limpiador de ratones", "LimpiezaBoom", "Saber limpiar ratones", "Trabajo de tus sueños", 100L, date);
 
